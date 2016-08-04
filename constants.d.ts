@@ -1,3 +1,4 @@
+declare const OK: ErrCode;
 declare const ERR_BUSY: ErrCode;
 declare const ERR_FULL: ErrCode;
 declare const ERR_GCL_NOT_ENOUGH: ErrCode;
