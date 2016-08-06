@@ -1,4 +1,4 @@
-declare class Room implements Named {
+declare class Room {
     controller: StructureController;
     energyAvailable: number;
     energyCapacityAvailable: number;

@@ -51,8 +51,6 @@ interface MoveToOpts {
     serializeMemory?: boolean;
 }
 
-interface Named { name: string; }
-
 interface Owned {
     my: boolean;
     owner: { username: string; };
