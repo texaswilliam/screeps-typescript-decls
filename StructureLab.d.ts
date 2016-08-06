@@ -1,4 +1,4 @@
-declare class StructureLab extends OwnedStructure {
+declare class StructureLab extends OwnedStructure implements HasEnergy {
     cooldown: number;
     energy: number;
     energyCapacity: number;

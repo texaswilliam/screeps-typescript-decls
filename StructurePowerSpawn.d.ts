@@ -1,4 +1,4 @@
-declare class StructurePowerSpawn extends OwnedStructure {
+declare class StructurePowerSpawn extends OwnedStructure implements HasEnergy {
     energy: number;
     energyCapacity: number;
     power: number;

@@ -1,4 +1,4 @@
-declare class StructureLink extends OwnedStructure {
+declare class StructureLink extends OwnedStructure implements HasEnergy {
     cooldown: number;
     energy: number;
     energyCapacity: number;

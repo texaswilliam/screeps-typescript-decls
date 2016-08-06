@@ -1,4 +1,4 @@
-declare class StructureNuker extends OwnedStructure {
+declare class StructureNuker extends OwnedStructure implements HasEnergy {
     energy: number;
     energyCapacity: number;
     ghodium: number;

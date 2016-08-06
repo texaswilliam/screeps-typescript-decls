@@ -1,4 +1,4 @@
-declare class StructureExtension extends OwnedStructure {
+declare class StructureExtension extends OwnedStructure implements HasEnergy {
     energy: number;
     energyCapacity: number;
 
