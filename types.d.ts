@@ -28,5 +28,3 @@ type StructureType = "container" | "controller" | "extension" | "extractor" | "k
     "observer" | "portal" | "powerBank" | "powerSpawn" | "rampart" | "road" | "spawn" | "storage" | "terminal" |
     "tower" | "wall";
 type TerrainType = "plain" | "swamp" | "wall";
-
-type LookTypeType = ConstructionSite | Creep | Flag | Mineral | Nuke | Resource | Source | Structure | TerrainType;
