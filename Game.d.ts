@@ -31,6 +31,8 @@ interface Game {
     market: {
         incomingTransactions: Transaction[];
         outgoingTransactions: Transaction[];
+
+        calcTransactionCost(amount: number, roomName1: RoomName, roomName2: RoomName): number;
     }
 
     rooms: { [name: string]: Room; };
