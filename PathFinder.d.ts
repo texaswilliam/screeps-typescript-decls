@@ -1,6 +1,6 @@
 declare namespace PathFinder {
     /** Yes, these actually have to be RoomPositions and not just XYRs. */
-    type Goal = RoomPosition | { pos: RoomPosition, range?: number };
+    type Goal = RoomPosition | { pos: RoomPosition, range: number };
 
     /** Yes, these actually have to be RoomPositions and not just XYRs. */
     export function search(origin: RoomPosition, goal: Goal | Goal[], opts?: SearchOpts): { path: RoomPosition[], ops: number };
