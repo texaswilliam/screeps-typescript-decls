@@ -1,7 +1,11 @@
 declare namespace PathFinder {
-    export function search(origin: XYR | HasXYR, goal: XYR | HasXYR | HasXYR & { range: number }, opts?: SearchOpts): { path: RoomPosition[], ops: number };
+    /** Yes, these actually have to be RoomPositions and not just XYRs. */
+    type Goal = RoomPosition | { pos: RoomPosition, range?: number };
+
+    /** Yes, these actually have to be RoomPositions and not just XYRs. */
+    export function search(origin: RoomPosition, goal: Goal | Goal[], opts?: SearchOpts): { path: RoomPosition[], ops: number };
     export function use(isEnabled: boolean): void;
-    
+
     export class CostMatrix {
         constructor();
 
