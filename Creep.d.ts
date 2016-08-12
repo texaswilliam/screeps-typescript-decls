@@ -1,5 +1,5 @@
 declare class Creep extends RoomObject implements Destructible, HasID, Owned {
-    body: { boost?: ResourceType; type: BodyPartType; hits: number; };
+    body: { boost?: ResourceType; type: BodyPartType; hits: number; }[];
     carry: { [resourceType: string]: number; };
     carryCapacity: number;
     fatigue: number;
