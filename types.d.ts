@@ -14,7 +14,7 @@ type RoomName = string;
 type SpawnName = string;
 type Ticks = number;
 
-type BodyPartType = "attack" | "carry" | "claim" | "heal" | "move" | "ranged_attack" | "tough" | "move";
+type BodyPartType = "attack" | "carry" | "claim" | "heal" | "move" | "ranged_attack" | "tough" | "work";
 type CreepMethodName = "attack" | "attackController" | "build" | "claimController" | "dismantle" | "drop" | "harvest" |
     "heal" | "move" | "pickup" | "rangedAttack" | "rangedHeal" | "rangedMassAttack" | "repair" | "reserveController" |
     "say" | "suicide" | "transfer" | "upgradeController" | "withdraw";
