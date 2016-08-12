@@ -60,27 +60,27 @@ declare const COLOR_RED: Color;
 declare const COLOR_WHITE: Color;
 declare const COLOR_YELLOW: Color;
 
-declare const LOOK_CONSTRUCTION_SITES: LookType;
-declare const LOOK_CREEPS: LookType;
-declare const LOOK_ENERGY: LookType;
-declare const LOOK_FLAGS: LookType;
-declare const LOOK_MINERALS: LookType;
-declare const LOOK_NUKES: LookType;
-declare const LOOK_RESOURCES: LookType;
-declare const LOOK_SOURCES: LookType;
-declare const LOOK_STRUCTURES: LookType;
-declare const LOOK_TERRAIN: LookType;
+declare const LOOK_CONSTRUCTION_SITES: "constructionSite";
+declare const LOOK_CREEPS: "creep";
+declare const LOOK_ENERGY: "energy";
+declare const LOOK_FLAGS: "flag";
+declare const LOOK_MINERALS: "mineral";
+declare const LOOK_NUKES: "nuke";
+declare const LOOK_RESOURCES: "resource";
+declare const LOOK_SOURCES: "source";
+declare const LOOK_STRUCTURES: "structure";
+declare const LOOK_TERRAIN: "terrain";
 
 declare const OBSTACLE_OBJECT_TYPES: { [i: number]: string; };
 
-declare const ATTACK: BodyPartType;
-declare const CARRY: BodyPartType;
-declare const CLAIM: BodyPartType;
-declare const HEAL: BodyPartType;
-declare const MOVE: BodyPartType;
-declare const RANGED_ATTACK: BodyPartType;
-declare const TOUGH: BodyPartType;
-declare const WORK: BodyPartType;
+declare const ATTACK: "attack";
+declare const CARRY: "carry";
+declare const CLAIM: "claim";
+declare const HEAL: "heal";
+declare const MOVE: "move";
+declare const RANGED_ATTACK: "ranged_attack";
+declare const TOUGH: "tough";
+declare const WORK: "work";
 
 declare const BODYPART_COST: { [bodyPartName: string]: number; };
 
