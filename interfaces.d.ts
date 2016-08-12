@@ -31,7 +31,7 @@ interface HasEnergy {
     energyCapacity: number;
 }
 
-interface HasID { id: ID }
+interface HasID { id: ID; }
 
 interface HasProgress {
     progress: number;
