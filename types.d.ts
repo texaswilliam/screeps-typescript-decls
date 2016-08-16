@@ -24,7 +24,7 @@ type MineralType = "H" | "O" | "U" | "L" | "K" | "Z" | "X" | "G";
 type ResourceType = "energy" | "power" | MineralType | "OH" | "ZK" | "UL" | "UH" | "UO" | "KH" | "KO" | "LH" | "LO" |
     "ZH" | "ZO" | "GH" | "GO" | "UH2O" | "UHO2" | "KH2O" | "KHO2" | "LH2O" | "LHO2" | "ZH2O" | "ZHO2" | "GH2O" |
     "GHO2" | "XUH2O" | "XUHO2" | "XKH2O" | "XKHO2" | "XLH2O" | "XLHO2" | "XZH2O" | "XZHO2" | "XGH2O" | "XGHO2";
-type StructureType = "container" | "controller" | "extension" | "extractor" | "keeperLair" | "lab" | "link" | "nuker" |
-    "observer" | "portal" | "powerBank" | "powerSpawn" | "rampart" | "road" | "spawn" | "storage" | "terminal" |
-    "tower" | "wall";
+type StructureType = "constructedWall" | "container" | "controller" | "extension" | "extractor" | "keeperLair" | "lab" |
+    "link" | "nuker" | "observer" | "portal" | "powerBank" | "powerSpawn" | "rampart" | "road" | "spawn" | "storage" |
+    "terminal" | "tower";
 type TerrainType = "plain" | "swamp" | "wall";
