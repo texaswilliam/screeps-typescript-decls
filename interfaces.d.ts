@@ -70,7 +70,7 @@ interface SearchOpts {
     maxOps?: number;
     maxRooms?: number;
     plainCost?: number;
-    roomCallback?(roomName: RoomName): PathFinder.CostMatrix;
+    roomCallback?(roomName: RoomName): PathFinder.CostMatrix | undefined;
     swampCost?: number;
 }
 
