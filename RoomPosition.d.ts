@@ -9,15 +9,15 @@ declare class RoomPosition implements XYR {
 
     createFlag(name?: string, color?: Color, secondaryColor?: Color) : string | ErrCode;
 
-    findClosestByPath(type: FindType, opts?: FilterOpt<RoomObject> & AlgorithmOpt & FindPathOpts): RoomObject;
+    findClosestByPath(type: FindType, opts?: FilterOpt<FindU> & AlgorithmOpt & FindPathOpts): FindU;
     findClosestByPath<T extends XYR>(objects: T[], opts?: FilterOpt<T> & AlgorithmOpt & FindPathOpts): T;
     findClosestByPath<T extends HasXYR>(objects: T[], opts?: FilterOpt<T> & AlgorithmOpt & FindPathOpts): T;
 
-    findClosestByRange(type: FindType, opts?: FilterOpt<RoomObject>): RoomObject;
+    findClosestByRange(type: FindType, opts?: FilterOpt<FindU>): FindU;
     findClosestByRange<T extends XYR>(objects: T[], opts?: FilterOpt<T>): T;
     findClosestByRange<T extends HasXYR>(objects: T[], opts?: FilterOpt<T>): T;
 
-    findInRange(type: FindType, range: number, opts?: FilterOpt<RoomObject>): RoomObject[];
+    findInRange(type: FindType, range: number, opts?: FilterOpt<FindU>): FindU[];
     findInRange<T extends XYR>(objects: T[], range: number, opts?: FilterOpt<T>): T[];
     findInRange<T extends HasXYR>(objects: T[], range: number, opts?: FilterOpt<T>): T[];
 

@@ -28,3 +28,9 @@ type StructureType = "constructedWall" | "container" | "controller" | "extension
     "link" | "nuker" | "observer" | "portal" | "powerBank" | "powerSpawn" | "rampart" | "road" | "spawn" | "storage" |
     "terminal" | "tower";
 type TerrainType = "plain" | "swamp" | "wall";
+
+type FindU = ConstructionSite | Creep | Flag | Mineral | Nuke | Resource | Source | StructureU;
+type OwnedStructureU = StructureController | StructureExtension | StructureExtractor | StructureKeeperLair |
+    StructureLab | StructureLink | StructureNuker | StructureObserver | StructurePowerBank | StructurePowerSpawn |
+    StructureRampart | StructureSpawn | StructureStorage | StructureTerminal | StructureTower;
+type StructureU = OwnedStructureU | StructureContainer | StructurePortal | StructureRoad | StructureWall;

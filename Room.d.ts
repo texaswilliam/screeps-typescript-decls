@@ -14,7 +14,7 @@ declare class Room {
     createFlag(x: number, y: number, name?: string, color?: Color, secondaryColor?: Color): string | ErrCode;
     createFlag(pos: XYR | HasXYR, name?: string, color?: Color, secondaryColor?: Color): string | ErrCode;
 
-    find(type: FindType, opts?: FilterOpt<RoomObject>): RoomObject[];
+    find(type: FindType, opts?: FilterOpt<FindU>): FindU[];
     findExitTo(room: string | Room): FindExit | ErrCode;
     findPath(fromPos: XYR | HasXYR, toPos: XYR | HasXYR, opts?: FindPathOpts): PathStep[];
     getPositionAt(x: number, y: number): RoomPosition;
@@ -34,7 +34,7 @@ declare class Room {
     lookForAt(type: "nuke", x: number, y: number): Nuke[];
     lookForAt(type: "resource", x: number, y: number): Resource[];
     lookForAt(type: "source", x: number, y: number): Source[];
-    lookForAt(type: "structure", x: number, y: number): Structure[];
+    lookForAt(type: "structure", x: number, y: number): StructureU[];
     lookForAt(type: "terrain", x: number, y: number): TerrainType[];
 
     lookForAtArea(type: "constructionSite", top: number, left: number, bottom: number, right: number): YX<ConstructionSite[]>;
@@ -45,7 +45,7 @@ declare class Room {
     lookForAtArea(type: "nuke", top: number, left: number, bottom: number, right: number): YX<Nuke[]>;
     lookForAtArea(type: "resource", top: number, left: number, bottom: number, right: number): YX<Resource[]>;
     lookForAtArea(type: "source", top: number, left: number, bottom: number, right: number): YX<Source[]>;
-    lookForAtArea(type: "structure", top: number, left: number, bottom: number, right: number): YX<Structure[]>;
+    lookForAtArea(type: "structure", top: number, left: number, bottom: number, right: number): YX<StructureU[]>;
     lookForAtArea(type: "terrain", top: number, left: number, bottom: number, right: number): YX<TerrainType[]>;
 
     lookForAtArea(type: "constructionSite", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<ConstructionSite[]> | { x: number; y: number; constructionSite: ConstructionSite; }[];
@@ -56,7 +56,7 @@ declare class Room {
     lookForAtArea(type: "nuke", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Nuke[]> | { x: number; y: number; nuke: Nuke; }[];
     lookForAtArea(type: "resource", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Resource[]> | { x: number; y: number; resource: Resource; }[];
     lookForAtArea(type: "source", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Source[]> | { x: number; y: number; source: Source; }[];
-    lookForAtArea(type: "structure", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Structure[]> | { x: number; y: number; structure: Structure; }[];
+    lookForAtArea(type: "structure", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<StructureU[]> | { x: number; y: number; structure: StructureU; }[];
     lookForAtArea(type: "terrain", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<TerrainType[]> | { x: number; y: number; terrain: TerrainType; }[];
 
     static deserializePath(path: string): PathStep[];
