@@ -40,7 +40,7 @@ interface Game {
     structures: { [id: string]: Structure; };
     time: Ticks;
 
-    getObjectById(id: ID): ConstructionSite | Creep | Mineral | Nuke | Resource | Source | Structure | null;
+    getObjectById(id: ID): ConstructionSite | Creep | Mineral | Nuke | Resource | Source | StructureU | null;
     notify(message: string, groupInterval?: number): void;
 }
 
