@@ -37,27 +37,27 @@ declare class Room {
     lookForAt(type: "structure", x: number, y: number): StructureU[];
     lookForAt(type: "terrain", x: number, y: number): TerrainType[];
 
-    lookForAtArea(type: "constructionSite", top: number, left: number, bottom: number, right: number): YX<ConstructionSite[]>;
-    lookForAtArea(type: "creep", top: number, left: number, bottom: number, right: number): YX<Creep[]>;
+    lookForAtArea(type: "constructionSite", top: number, left: number, bottom: number, right: number): YX<[ConstructionSite]>;
+    lookForAtArea(type: "creep", top: number, left: number, bottom: number, right: number): YX<[Creep]>;
     lookForAtArea(type: "energy", top: number, left: number, bottom: number, right: number): YX<Resource[]>;
     lookForAtArea(type: "flag", top: number, left: number, bottom: number, right: number): YX<Flag[]>;
     lookForAtArea(type: "mineral", top: number, left: number, bottom: number, right: number): YX<Mineral[]>;
     lookForAtArea(type: "nuke", top: number, left: number, bottom: number, right: number): YX<Nuke[]>;
     lookForAtArea(type: "resource", top: number, left: number, bottom: number, right: number): YX<Resource[]>;
-    lookForAtArea(type: "source", top: number, left: number, bottom: number, right: number): YX<Source[]>;
+    lookForAtArea(type: "source", top: number, left: number, bottom: number, right: number): YX<[Source]>;
     lookForAtArea(type: "structure", top: number, left: number, bottom: number, right: number): YX<StructureU[]>;
-    lookForAtArea(type: "terrain", top: number, left: number, bottom: number, right: number): YX<TerrainType[]>;
+    lookForAtArea(type: "terrain", top: number, left: number, bottom: number, right: number): YX<[TerrainType]>;
 
-    lookForAtArea(type: "constructionSite", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<ConstructionSite[]> | { x: number; y: number; constructionSite: ConstructionSite; }[];
-    lookForAtArea(type: "creep", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Creep[]> | { x: number; y: number; creep: Creep; }[];
+    lookForAtArea(type: "constructionSite", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<[ConstructionSite]> | { x: number; y: number; constructionSite: ConstructionSite; }[];
+    lookForAtArea(type: "creep", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<[Creep]> | { x: number; y: number; creep: Creep; }[];
     lookForAtArea(type: "energy", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Resource[]> | { x: number; y: number; energy: Resource; }[];
     lookForAtArea(type: "flag", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Flag[]> | { x: number; y: number; flag: Flag; }[];
-    lookForAtArea(type: "mineral", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Mineral[]> | { x: number; y: number; mineral: Mineral; }[];
+    lookForAtArea(type: "mineral", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<[Mineral]> | { x: number; y: number; mineral: Mineral; }[];
     lookForAtArea(type: "nuke", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Nuke[]> | { x: number; y: number; nuke: Nuke; }[];
     lookForAtArea(type: "resource", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Resource[]> | { x: number; y: number; resource: Resource; }[];
-    lookForAtArea(type: "source", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<Source[]> | { x: number; y: number; source: Source; }[];
+    lookForAtArea(type: "source", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<[Source]> | { x: number; y: number; source: Source; }[];
     lookForAtArea(type: "structure", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<StructureU[]> | { x: number; y: number; structure: StructureU; }[];
-    lookForAtArea(type: "terrain", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<TerrainType[]> | { x: number; y: number; terrain: TerrainType; }[];
+    lookForAtArea(type: "terrain", top: number, left: number, bottom: number, right: number, asArray: boolean): YX<[TerrainType]> | { x: number; y: number; terrain: TerrainType; }[];
 
     static deserializePath(path: string): PathStep[];
     static serializePath(path: PathStep[]): string;
