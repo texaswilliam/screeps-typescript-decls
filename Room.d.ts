@@ -14,7 +14,7 @@ declare class Room {
     createFlag(x: number, y: number, name?: string, color?: Color, secondaryColor?: Color): string | ErrCode;
     createFlag(pos: XYR | HasXYR, name?: string, color?: Color, secondaryColor?: Color): string | ErrCode;
 
-    find(type: FindType, opts?: FilterOpt<FindU>): FindU[];
+    find(type: FindType, opts?: FilterOpt<FindU>): FindArrU;
     findExitTo(room: string | Room): FindExit | ErrCode;
     findPath(fromPos: XYR | HasXYR, toPos: XYR | HasXYR, opts?: FindPathOpts): PathStep[];
     getPositionAt(x: number, y: number): RoomPosition;
